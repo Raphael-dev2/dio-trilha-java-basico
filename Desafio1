@@ -1,0 +1,30 @@
+package contaBancoDio;
+
+import java.util.Scanner;
+
+public class ContaTerminal {
+
+	public static void main(String[] args) {
+		
+		Scanner t = new Scanner(System.in);		
+			
+		int ContaBanco;
+		String NumAgencia;
+		String NomeCliente;
+		Double SaldoConta = 237.48;
+		
+		System.out.println("Bem vindo ao caixa da conta Geral");
+		
+		System.out.println("Digite o numero da agência:");
+		NumAgencia = t.nextLine();
+		
+		System.out.println("Digite o nome do cliente referente a conta:");
+		NomeCliente = t.nextLine();
+		
+		System.out.println("Digite o numero da conta:");
+		ContaBanco = t.nextInt();
+		
+	
+		System.out.println("Olá " + NomeCliente +", obrigado por criar uma conta em nosso banco, sua agência é "+ NumAgencia +", conta "+ ContaBanco+" e seu saldo "+SaldoConta+" já está disponível para saque");
+	}
+}
